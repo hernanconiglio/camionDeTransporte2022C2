@@ -32,4 +32,6 @@ object camion {
 	method cosaMasPesada() = cosas.max({c=>c.peso()})
 	
 	method pesos() = cosas.map({c=>c.peso()})
+	
+	method totalBultos() = cosas.sum({c=>c.totalBultos()})
 }
